@@ -1,0 +1,121 @@
+/* Reset defaults */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+
+/* Main container */
+.container {
+  width: 100%;
+  max-width: 30rem;
+  background-color: white;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 20px;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(75, 75, 75, 0.3);
+  border-radius: 10px;
+}
+
+/* Heading */
+.heading {
+  font-size: 29px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Search input */
+#searchInput {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+#searchInput:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* User list container */
+.userContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+/* User card */
+.userContainer .userItem {
+  display: flex;
+  gap: 20px;
+  background-color: #fafafa;
+  width: 100%;
+  height: 5rem;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.userContainer .userItem:hover {
+  background-color: #e6f7ff;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+/* User image */
+.userContainer .userItem .image {
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+
+.userContainer .userItem img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* User details */
+.userContainer .userItem .userDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.userContainer .userItem .userDetails h3 {
+  font-size: 16px;
+  color: #333;
+}
+
+.userContainer .userItem .userDetails p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Highlight for search matches */
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.notFound{
+    color: red;
+}
