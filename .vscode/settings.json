@@ -1,3 +1,4 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "livePreview.defaultPreviewPath": "/09_DOM Manipulation/03_projects/05_animated_cursor/index.html"
 }
